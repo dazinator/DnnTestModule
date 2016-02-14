@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<dotnetnuke type="Package" version="6.0">
+  <packages>
+    <!--        
+      
+    For guidance regarding the format of this manifest file, please see http://www.dnnsoftware.com/wiki/Page/Manifests
+  
+    -->
+    <package name="DnnTestModule" type="Module" version="0.0.0">
+      <friendlyName>DnnTestModule</friendlyName>
+      <description></description>
+      <owner>
+        <name>Dazinator</name>
+        <organization></organization>
+        <url>http://www.someurl.com</url>
+        <email><![CDATA[<a href="mailto:support@someorg.com">support@someorg.com</a>]]></email>
+      </owner>
+      <license src="License.lic">
+      </license>
+      <releaseNotes src="ReleaseNotes.txt">
+      </releaseNotes>
+      <dependencies>
+        <!--Example dependencies-->
+        <!--<dependency type="CoreVersion">05.04.01</dependency>-->
+        <!--<dependency type="package">SomeOtherPackage</dependency>-->
+      </dependencies>
+      <components>
+        <component type="Module">
+          <desktopModule>
+            <moduleName>DnnTestModule</moduleName>
+            <foldername>DnnTestModule</foldername>
+            <businessControllerClass />
+            <supportedFeatures />
+            <moduleDefinitions>
+              <moduleDefinition>
+                <friendlyName>Dnn Test Module</friendlyName>
+                <defaultCacheTime>-1</defaultCacheTime>
+                <moduleControls>
+                  <moduleControl>
+                    <controlKey>
+                    </controlKey>
+                    <controlSrc>DesktopModules/DnnTestModule/Default.ascx</controlSrc>
+                    <supportsPartialRendering>False</supportsPartialRendering>
+                    <controlTitle>Hello World</controlTitle>
+                    <controlType>View</controlType>
+                    <helpUrl>
+                    </helpUrl>
+                  </moduleControl>
+                </moduleControls>
+                <permissions>
+                </permissions>
+              </moduleDefinition>
+            </moduleDefinitions>
+          </desktopModule>
+        </component>
+        <component type="Assembly">
+          <assemblies>
+            <assembly>
+              <path>bin</path>
+              <name>DnnTestModule.dll</name>
+            </assembly>
+          </assemblies>
+        </component>
+        <component type="ResourceFile">
+          <resourceFiles>
+            <basePath>DesktopModules/DnnTestModule</basePath>
+            <resourceFile>
+              <name>Resources.zip</name>
+            </resourceFile>
+          </resourceFiles>
+        </component>
+      </components>
+    </package>
+  </packages>
+</dotnetnuke>
