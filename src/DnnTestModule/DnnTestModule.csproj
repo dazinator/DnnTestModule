@@ -82,9 +82,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="manifest.dnn" />
+    <Content Include="packages.config" />
     <Content Include="License.lic" />
     <Content Include="DnnPackageBuilderOverrides.props" />
-    <Content Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -117,9 +117,9 @@
       </FlavorProperties>
     </VisualStudio>
   </ProjectExtensions>
-  <Import Project="..\packages\DnnPackager.2.0.1\tools\DnnPackager.props" />
+  <Import Project="..\packages\DnnPackager.2.0.2\tools\DnnPackager.props" />
   <Import Project="DnnPackageBuilderOverrides.props" />
-  <Import Project="..\packages\DnnPackager.2.0.1\tools\dnnpackager.targets" />
+  <Import Project="..\packages\DnnPackager.2.0.2\tools\dnnpackager.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
